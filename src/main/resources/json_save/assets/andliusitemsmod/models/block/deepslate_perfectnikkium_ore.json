@@ -1,0 +1,6 @@
+{
+ "parent": "block/cube_all",
+  "textures":{
+    "all": "andliusitemsmod:block/deepslate_perfectnikkium_ore"
+  }
+}
