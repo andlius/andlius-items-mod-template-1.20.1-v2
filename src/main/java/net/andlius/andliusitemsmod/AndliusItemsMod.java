@@ -1,5 +1,8 @@
 package net.andlius.andliusitemsmod;
 
+import net.andlius.andliusitemsmod.block.ModBlocks;
+import net.andlius.andliusitemsmod.item.ModItemGroups;
+import net.andlius.andliusitemsmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +14,8 @@ public class AndliusItemsMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
+        ModItems.registerModItems();
+        ModItemGroups.registerItemGroups();
+        ModBlocks.registerModBlocks();
 	}
 }
